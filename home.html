@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">  
+    </head>
+    <body>
+        <header style="z-index: 10; width: 100%; height: 80px; display: flex; align-items: center; position: fixed;">
+            <figure><img src="images/freepik__the-style-is-candid-image-photography-with-natural__56837.png" alt="logo" style="margin-top: 15px; margin-right: 30px; width: 75px; height: 75px; border-radius: 50%; margin-left: 20px; box-shadow: 0px 0px 10px 2px #281e0a;"></figure>
+            <p id="user"></p>
+            <div class="offcanvas offcanvas-end" style="background-color: #f1f0f0; border-radius: 50px 0px 0px 0px;" id="demo">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title" style="color: #453312; margin-left: 95px;">Your Cart</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body" id="list">
+                </div>
+                </div>
+
+                <div class="container mt-3" style="margin-left: 1050px; position: relative;">
+                    <div class="no_product" count = "0" style="text-align: center; width: 20px; height: 20px; margin-left: 15px; margin-top: -18px; position: absolute;"></div>
+                    <i class="fa-solid fa-cart-shopping"style="font-size: 2.5rem; cursor: pointer;" data-bs-toggle="offcanvas" data-bs-target="#demo"></i>
+            </div>
+             
+        </header>
+        <div class="bigContainer" style="display: flex;">
+            <div class="leftCont" style="width: 200px; height: 98vh; background-color: #704b29; position: relative;">
+                <div class="home" style="text-align: center; padding-top: 8px; width: 100%; height: 40px; border-bottom: 2px solid #f1f0f0; margin-top: 80.5px; position: absolute;"><a href="home.html" style="text-decoration: none; color: #f1f0f0;">Home</a></div>
+                <div class="home" style="text-align: center; padding-top: 8px; width: 100%; height: 40px; border-bottom: 2px solid #f1f0f0; margin-top: 120.5px; position: absolute;"><a href="login.html" style="text-decoration: none; color: #f1f0f0;">Login</a></div>
+                <div class="home" style="text-align: center; padding-top: 8px; width: 100%; height: 40px; border-bottom: 2px solid #f1f0f0; margin-top: 160.5px; position: absolute;"><a href="#" data-bs-toggle="offcanvas" data-bs-target="#demo" style="text-decoration: none; color: #f1f0f0;">Products</a></div>
+                <h4 style="margin-top: 230px; text-align: center; color: #f1f0f0;">Total Price:</h4>
+                <div id="price" style="width: 100px; height: 30px; background-color: #f1f0f0; color: #453312; margin-top: 10px; margin-left: 40px; border-radius: 3px; padding-left: 5px;"></div>
+            </div>
+            <div class="cards" style="width: 100%; height: 100vh; padding-top: 150px;">
+                <div class="card" style=" height: 200px;" price="250">
+                    <figure><img src="images/واحة اليعقوب.jpg" alt="Product 1" style="height: 150px;"></figure>
+                    <figcaption style="text-align: center;">
+                        <h3>واحة اليعقوب</h3>
+                        <p>250ج</p>
+                    </figcaption>
+                    <button id="cart" style="z-index: 10; width: 80px; height: 30px; margin-left: 230px; margin-top: -10px; border-radius: 20px; border:1px solid brown;">Add to cart</button>
+                </div>
+                <div class="card" style="height: 200px;" price="200">
+                    <figure><img src="images/ارض زيكولا.jpg" alt="Product 2" style=" height: 150px;"></figure>
+                    <figcaption>
+                        <h3>أرض زيكولا</h3>
+                        <p>200ج</p>
+                    </figcaption> 
+                    <button id="cart" style="z-index: 10; width: 80px; height: 30px; margin-left: 230px; margin-top: -10px; border-radius: 20px; border:1px solid brown;">Add to cart</button>  
+                </div>
+                <div class="card" style="height: 200px;" price="250">
+                    <figure><img src="images/لوغاريتم.jpg" alt="Product 3" style=" height: 150px;"></figure>
+                    <figcaption>
+                        <h3>أماريتا</h3>
+                        <p>250ج</p>
+                    </figcaption>
+                    <button id="cart" style="z-index: 5; width: 80px; height: 30px; margin-left: 230px; margin-top: -10px; border-radius: 20px; border:1px solid brown;">Add to cart</button>
+                </div>
+                <div class="card" style="height: 200px;" price="250">
+                    <figure><img src="images/قراءة و تحميل رواية ابابيل pdf احمد ال حمدان.jpg" alt="Product 4" style=" height: 150px;"></figure>
+                    <figcaption>
+                        <h3>أبابيل</h3>
+                        <p>250ج</p>
+                    </figcaption>
+                    <button id="cart" style="z-index: 5; width: 80px; height: 30px; margin-left: 230px; margin-top: -10px; border-radius: 20px; border:1px solid brown;">Add to cart</button>
+                </div>
+                <div class="card" style="height: 200px;" price="150">
+                    <figure><img src="images/download.jpg" alt="Product 5" style="height: 150px;"></figure>
+                    <figcaption>
+                        <h3>يوتوبيا</h3>
+                        <p>150ج</p>
+                    </figcaption>
+                    <button id="cart" style="z-index: 10; width: 80px; height: 30px; margin-left: 230px; margin-top: -10px; border-radius: 20px; border:1px solid brown;">Add to cart</button>
+                </div>
+                <div class="card" style="height: 200px;" price="200">
+                    <figure><img src="images/القادمون.jpg" alt="Product 6" style="height: 150px;"></figure>
+                    <figcaption>
+                        <h3>القادمون</h3>
+                        <p>200ج</p>
+                    </figcaption>
+                    <button id="cart" style="z-index: 10; width: 80px; height: 30px; margin-left: 230px; margin-top: -10px; border-radius: 20px; border:1px solid brown;">Add to cart</button>
+                </div>
+                <div class="card" style="height: 200px;" price="300">
+                    <figure><img src="images/الأب الغني الأب الفقير، من روبرت كيوساكي غلاف ورقي – 9 يوليو 2018.jpg" alt="Product 7" style="height: 150px;"></figure>
+                    <figcaption>
+                        <h3>الأب الغني الأب الفقير</h3>
+                        <p>300ج</p>
+                    </figcaption>
+                    <button id="cart" style="z-index: 5; width: 80px; height: 30px; margin-left: 230px; margin-top: -10px; border-radius: 20px; border:1px solid brown;">Add to cart</button>
+                </div>
+                <div class="card" style="height: 200px;" price="350">
+                    <figure><img src="images/العادات الذرية نسخة اصلية.jpg" alt="Product 8" style="height: 150px;"></figure>
+                    <figcaption>
+                        <h3>العادات الذرية</h3>
+                        <p>350ج</p>
+                    </figcaption>
+                    <button id="cart" style="z-index: 5; width: 80px; height: 30px; margin-left: 230px; margin-top: -10px; border-radius: 20px; border:1px solid brown;">Add to cart</button>
+                </div>
+                <div class="footer" style="color: #f1f0f0; position: relative; grid-column: 1 / -1; text-align: center; padding: 15px; background-color: #453312; width: 100%; box-shadow: 0px 0px 10px 5px #f1f0f03c inset;">
+                    <p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">© 2025 StoryVerse. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+
+            <script src="home.js"></script>
+            
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
